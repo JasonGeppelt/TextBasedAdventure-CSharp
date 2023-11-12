@@ -1,0 +1,99 @@
+﻿Starting_Scenario:
+You find yourself standing at a crossroads in a dense forest. The path diverges into two directions.
+
+1. Option 1: Take the left path.
+    - Scenario_1:
+    You decide to take the left path. As you walk deeper into the forest, you encounter a mysterious old man sitting by a campfire. He offers you a small, ancient-looking map.
+        1. Option 1: Accept the map and engage in conversation with the old man.
+            - Scenario_1_1:
+            The old man shares tales of the forest's secrets and warns you of a hidden danger ahead. He suggests an alternative route to bypass the danger.
+                1. Option 1: Follow the alternative route.
+                    - Scenario_1_1_1:
+                    Following the alternative route, you discover an ancient temple hidden deep within the forest. Inside, a wise sage imparts ancient wisdom and offers you a choice:
+                        1. Option 1: Embrace the wisdom and gain a new ability.
+                           - Final_Scenario_1:
+                           Your ability leads you to gain much power in this world. You rule until your dying breath.
+                        2. Option 2: Politely thank the sage and continue your journey.
+                           - Final_Scenario_2:
+                           You continue your journey, using the sage's advice to navigate the forest safely. Eventually, you emerge from the forest with newfound knowledge.
+
+                2. Option 2: Ignore the old man's warning and continue on the current path.
+                    - Scenario_1_1_2:
+                    Ignoring the warning, you stumble upon a territory of territorial creatures. They challenge you to a friendly competition.
+                        1. Option 1: Accept the challenge and showcase your skills.
+                           - Final_Scenario_3:
+                           You impress the creatures with your skills, earning their respect. They guide you through the forest, and you emerge unscathed.
+                        2. Option 2: Attempt to peacefully negotiate and avoid the competition.
+                           - Final_Scenario_4:
+                           Your diplomatic approach impresses the creatures, and they offer you safe passage through their territory. You continue your journey unharmed.
+
+            - Scenario_1_2:
+            As you walk further, you encounter a group of friendly woodland creatures that guide you to a magical waterfall with healing properties.
+                1. Option 1: Drink from the waterfall and rest for a while.
+                    - Scenario_1_2_1:
+                    After resting, you find a hidden path that leads to a mystical grove. The grove offers you a chance to communicate with nature.
+                        1. Option 1: Connect with nature and gain insights.
+                           - Final_Scenario_5:
+                           The insights you gain from nature help you navigate the forest with ease. You emerge from the forest with newfound wisdom.
+                        2. Option 2: Leave the grove and continue your journey.
+                           - Final_Scenario_6:
+                           You decide to press on with your journey. The creatures bid you farewell, and you continue your exploration.
+
+                2. Option 2: Thank the creatures and continue your journey.
+                    - Scenario_1_2_2:
+                    The creatures give you a magical amulet as a token of gratitude. The amulet has an unknown power.
+                        1. Option 1: Experiment with the amulet's power.
+                           - Final_Scenario_7:
+                           Your experiments reveal the amulet's power to heal and protect. It aids you in overcoming challenges, and you emerge from the forest unscathed.
+                        2. Option 2: Keep the amulet but refrain from using its power.
+                           - Final_Scenario_8:
+                           You decide not to risk the unknown. Carrying the amulet, you navigate the forest carefully and eventually emerge safely.
+
+2. Option 2: Take the right path.
+    - Scenario_2:
+    Opting for the right path leads you to a clearing where you discover a hidden treasure chest partially buried in the ground.
+        1. Option 1: Open the treasure chest to see what's inside.
+            - Scenario_2_1:
+            Inside the chest, you find a mystical artifact that grants you the ability to communicate with the forest spirits.
+                1. Option 1: Use the artifact to seek guidance from the forest spirits.
+                    - Scenario_2_1_1:
+                    The forest spirits guide you to a magical portal that can transport you to a different realm.
+                        1. Option 1: Enter the portal and explore the new realm.
+                           - Final_Scenario 9
+                           The new realm is a place of wonder and knowledge. You gain valuable insights and return to your world with newfound wisdom.
+                        2. Option 2: Choose not to enter the portal and continue your journey in the forest.
+                           - Final_Scenario 10
+                           You decide to stay in the familiar forest, using the guidance of the forest spirits to navigate successfully. You emerge from the forest with a sense of accomplishment.
+
+                2. Option 2: Put the artifact away and continue your journey without seeking guidance.
+                    - Scenario_2_1_2:
+                    Without guidance, you come across a mystical tree with glowing fruits. Each fruit represents a different choice.
+                        1. Option 1: Eat a glowing fruit and embrace the consequence.
+                           - Final_Scenario 11                        
+                           The fruit grants you the ability to understand the language of animals. This skill helps you navigate the forest, and you emerge safely.
+                        2. Option 2: Choose not to eat any fruit and proceed cautiously.
+                           - Final_Scenario 12:
+                           You decide not to take the risk. Proceeding cautiously, you navigate the forest and eventually emerge unharmed.
+                           
+        2. Option 2: Ignore the treasure chest and explore the surrounding area.
+            - Scenario_2_2:
+            As you explore, you come across an ancient stone circle with glowing symbols. It emanates a mysterious energy.
+                1. Option 1: Touch the symbols and try to unlock their secrets.
+                    - Scenario_2_2_1:
+                    Touching the symbols activates a magical pathway to a hidden grove where mystical creatures reside.
+                        1. Option 1: Interact with the creatures and learn from their ancient knowledge.
+                           - Final_Scenario 13
+                           The creatures share ancient knowledge with you, helping you understand the forest's secrets. You emerge from the forest with newfound wisdom.
+                        2. Option 2: Observe the creatures from a distance and proceed with caution.
+                           - Final_Scenario 14
+                           Observing from a distance, you learn valuable lessons in caution and subtlety. You navigate the forest carefully and emerge safely.
+
+                2. Option 2: Choose to observe the stone circle from a distance and proceed cautiously.
+                    - Scenario_2_2_2:
+                    Observing from a distance, you notice a faint trail leading to a forgotten shrine.
+                        1. Option 1: Investigate the shrine and uncover its secrets.
+                           - Final_Scenario 15:
+                           Investigating the shrine, you discover ancient artifacts that aid you in navigating the forest. You emerge unharmed and enriched.
+                        2. Option 2: Decide to leave the shrine undisturbed and continue your journey.
+                           - Final_Scenario 16:
+                           Respecting the sanctity of the shrine, you continue your journey without disturbance. The forest reveals its beauty to you, and you emerge with a sense of peace.
