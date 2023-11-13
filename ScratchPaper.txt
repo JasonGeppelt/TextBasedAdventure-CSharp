@@ -27,6 +27,7 @@ You find yourself standing at a crossroads in a dense forest. The path diverges 
                            - Final_Scenario_4:
                            Your diplomatic approach impresses the creatures, and they offer you safe passage through their territory. You continue your journey unharmed.
 
+        2. Option 2: Politely decline the map and continue on your way.
             - Scenario_1_2:
             As you walk further, you encounter a group of friendly woodland creatures that guide you to a magical waterfall with healing properties.
                 1. Option 1: Drink from the waterfall and rest for a while.

@@ -13,15 +13,23 @@ public class Game
     
     /**************************************************************
     * RUN
-    * Create and link scenarios then start the recursive gameplay
+    * Create and link scenarios then start game loop/recursive gameplay
     ***************************************************************/
     public static void Run()
     {
-        CreateScenarios();
-        LinkScenarios();
+        bool playAgain = true; 
+        
+        // Game loop
+        while (playAgain)
+        {
+            CreateScenarios();
+            LinkScenarios();
 
-        // Start the story
-        _startingScenario?.Play();
+            // Start the story
+            playAgain = _startingScenario!.Play();
+        } 
+        
+        Console.WriteLine("\nThanks for playing! Goodbye!");
     }
 
     /**************************************************************
@@ -106,44 +114,37 @@ public class Game
     * LINK SCENARIOS
     * Link each scenario's options to the next scenario
     ***************************************************************/
+    private static void LinkOptions(Scenario current, Scenario option1, Scenario option2)
+    {
+        current.Option1Scenario = option1;
+        current.Option2Scenario = option2;
+        option1.PreviousScenario = current;
+        option2.PreviousScenario = current;
+    }
+
     private static void LinkScenarios()
     {
-        // Linking starting scenario choices
-        _startingScenario.Option1 = _scenario1;
-        _startingScenario.Option2 = _scenario2;
+        // Linking starting scenario's options to the second-level scenarios
+        LinkOptions(_startingScenario, _scenario1, _scenario2);
 
-        // Linking second-level choices 
-        _scenario1.Option1 = _scenario1_1;
-        _scenario1.Option2 = _scenario1_2;
-        _scenario2.Option1 = _scenario2_1;
-        _scenario2.Option2 = _scenario2_2;
+        // Linking each second-level option to their respective third-level scenario
+        LinkOptions(_scenario1, _scenario1_1, _scenario1_2);
+        LinkOptions(_scenario2, _scenario2_1, _scenario2_2);
 
-        // Linking third-level choices
-        _scenario1_1.Option1 = _scenario1_1_1;
-        _scenario1_1.Option2 = _scenario1_1_2;
-        _scenario1_2.Option1 = _scenario1_2_1;
-        _scenario1_2.Option2 = _scenario1_2_2;
-        _scenario2_1.Option1 = _scenario2_1_1;
-        _scenario2_1.Option2 = _scenario2_1_2;
-        _scenario2_2.Option1 = _scenario2_2_1;
-        _scenario2_2.Option2 = _scenario2_2_2;
+        // Linking each third-level option to their respective fourth-level scenario
+        LinkOptions(_scenario1_1, _scenario1_1_1, _scenario1_1_2);
+        LinkOptions(_scenario1_2, _scenario1_2_1, _scenario1_2_2);
+        LinkOptions(_scenario2_1, _scenario2_1_1, _scenario2_1_2);
+        LinkOptions(_scenario2_2, _scenario2_2_1, _scenario2_2_2);
 
-        // Linking fourth-level choices to final scenarios
-        _scenario1_1_1.Option1 = _finalScenario1;
-        _scenario1_1_1.Option2 = _finalScenario2;
-        _scenario1_1_2.Option1 = _finalScenario3;
-        _scenario1_1_2.Option2 = _finalScenario4;
-        _scenario1_2_1.Option1 = _finalScenario5;
-        _scenario1_2_1.Option2 = _finalScenario6;
-        _scenario1_2_2.Option1 = _finalScenario7;
-        _scenario1_2_2.Option2 = _finalScenario8;
-        _scenario2_1_1.Option1 = _finalScenario9;
-        _scenario2_1_1.Option2 = _finalScenario10;
-        _scenario2_1_2.Option1 = _finalScenario11;
-        _scenario2_1_2.Option2 = _finalScenario12;
-        _scenario2_2_1.Option1 = _finalScenario13;
-        _scenario2_2_1.Option2 = _finalScenario14;
-        _scenario2_2_2.Option1 = _finalScenario15;
-        _scenario2_2_2.Option2 = _finalScenario16;
+        // Linking each fourth-level option to their respective final-level scenario
+        LinkOptions(_scenario1_1_1, _finalScenario1, _finalScenario2);
+        LinkOptions(_scenario1_1_2, _finalScenario3, _finalScenario4);
+        LinkOptions(_scenario1_2_1, _finalScenario5, _finalScenario6);
+        LinkOptions(_scenario1_2_2, _finalScenario7, _finalScenario8);
+        LinkOptions(_scenario2_1_1, _finalScenario9, _finalScenario10);
+        LinkOptions(_scenario2_1_2, _finalScenario11, _finalScenario12);
+        LinkOptions(_scenario2_2_1, _finalScenario13, _finalScenario14);
+        LinkOptions(_scenario2_2_2, _finalScenario15, _finalScenario16);
     }
 }
